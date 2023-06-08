@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "URL Replacer",
+    "version": "1.0",
+    "description": "Replace www.curseforge.com with legacy.curseforge.com",
+  
+    "content_scripts": [
+      {
+        "matches": ["*://www.curseforge.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+  
+    "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "<all_urls>"
+    ]
+  }
+  
