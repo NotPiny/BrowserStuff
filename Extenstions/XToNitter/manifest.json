@@ -1,12 +1,12 @@
 {
     "manifest_version": 2,
-    "name": "Legacy CF",
+    "name": "Twitter to Nitter",
     "version": "1.0",
-    "description": "Replace www.curseforge.com with legacy.curseforge.com",
+    "description": "Replace twitter with nitter",
   
     "content_scripts": [
       {
-        "matches": ["*://www.curseforge.com/*"],
+        "matches": ["*://twitter.com/*"],
         "js": ["content.js"]
       }
     ],
